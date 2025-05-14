@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agus & Valen</title>
+  <meta name="description" content="Agus & Valen: especialistas en redes sociales, diseño gráfico, branding y campañas Meta Ads. Creamos contenido visual, estrategias digitales y publicidad efectiva para marcas que buscan crecer en el mundo online.">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: #FCFAE7;
+      color: #1A3658;
+      scroll-behavior: smooth;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #903257;
+      color: #fff;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+    section { padding: 3rem 2rem; max-width: 960px; margin: auto; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; }
+    p { font-size: 1.1rem; margin-bottom: 1rem; }
+    .testimonial, .faq, .portfolio, .service-item {
+      background-color: #fff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .faq h3, .portfolio h3, .service-item h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+    .whatsapp-button {
+      background-color: #25D366;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background-color: #1A3658;
+      color: white;
+    }
+    .animated { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-in-out; }
+    .animated.visible { opacity: 1; transform: translateY(0); }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      });
+      document.querySelectorAll('.animated').forEach(el => observer.observe(el));
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Creatividad, estrategia y resultados.<br>Nosotras nos encargamos.</h1>
+  </header>
+
+  <section class="animated">
+    <h2>Sobre nosotras</h2>
+    <p>Somos Agus y Valen, un equipo con más de 5 años de experiencia en redes sociales, diseño y publicidad. Combinamos creatividad, análisis estratégico y diseño visual para que tu marca no solo se vea bien, sino que conecte y venda.</p>
+  </section>
+
+  <section class="animated">
+    <h2>What we do</h2>
+    <div class="service-item"><h3>Fotografía Profesional</h3><p>Creamos imágenes impactantes que cuentan historias y elevan la identidad visual de tu marca.</p></div>
+    <div class="service-item"><h3>Creación de Contenido</h3><p>Diseñamos y producimos contenido visual y narrativo alineado con tu esencia y objetivos.</p></div>
+    <div class="service-item"><h3>Social Media Management</h3><p>Gestionamos tus redes con estrategia, creatividad y consistencia, construyendo una comunidad auténtica.</p></div>
+    <div class="service-item"><h3>Meta Ads</h3><p>Diseñamos campañas publicitarias efectivas en Instagram y Facebook para potenciar tu alcance y conversiones.</p></div>
+    <div class="service-item"><h3>Identidad Visual</h3><p>Definimos y desarrollamos la estética visual de tu marca para generar coherencia, reconocimiento y conexión emocional.</p></div>
+  </section>
+
+  <section class="animated">
+    <h2>Portfolio</h2>
+    <div class="portfolio"><h3>Sophie V.</h3><p>Marca de textiles para el hogar con estética cálida y minimalista. Diseñamos una estrategia de contenidos inspiradora, con consejos y educación visual para decorar con estilo. <a href="https://www.instagram.com/sophiev.deco/" target="_blank">Ver Instagram</a></p></div>
+    <div class="portfolio"><h3>Ember Home Deco</h3><p>Nos encargamos de community management, contenidos y Meta Ads para una marca de sillones que comunica diseño y confort. <a href="https://www.instagram.com/emberhomedeco_/" target="_blank">Ver Instagram</a></p></div>
+    <div class="portfolio"><h3>Bordó Winebar</h3><p>Contamos su esencia gourmet y cálida a través de un storytelling visual lleno de emoción y sofisticación. <a href="https://www.instagram.com/yanosomos_bordo/" target="_blank">Ver Instagram</a></p></div>
+    <div class="portfolio"><h3>Alambique Bar</h3><p>Desarrollamos una identidad visual que combina lo andino con lo moderno. Usamos el humor y la autenticidad como puente de conexión. <a href="https://www.instagram.com/alambiquebar.arg/" target="_blank">Ver Instagram</a></p></div>
+    <div class="portfolio"><h3>Portofino Viajes</h3><p>Diseñamos una estética digital premium y gestionamos sus redes para transmitir exclusividad y calidez. <a href="https://www.instagram.com/portofino_viajes" target="_blank">Ver Instagram</a></p></div>
+    <div class="portfolio"><h3>Estética Club Lisboa</h3><p>Posicionamos esta clínica estética con una imagen clara, confiable y profesional. <a href="https://www.instagram.com/esteticaclublisboa" target="_blank">Ver Instagram</a></p></div>
+    <div class="portfolio"><h3>Santino Interiores</h3><p>Integramos la comunicación de la marca con decoración, estilo de vida y una publicidad efectiva. <a href="https://www.instagram.com/santinointeriores/" target="_blank">Ver Instagram</a></p></div>
+    <div class="portfolio"><h3>Ponele H</h3><p>Campañas publicitarias estratégicas según cada etapa del embudo, con humor y promociones que convierten. <a href="https://www.instagram.com/mates_corrientesph/reels/" target="_blank">Ver Instagram</a></p></div>
+    <div class="portfolio"><h3>Guilaroff</h3><p>Publicidad digital y gestión con influencers para una peluquería premium. <a href="https://www.instagram.com/guilaroff/" target="_blank">Ver Instagram</a></p></div>
+  </section>
+
+  <section class="animated">
+    <h2>Testimonios</h2>
+    <div class="testimonial">“Gracias a Agus y Valen logramos una estética profesional que representa exactamente nuestra marca.” – Sophie V.</div>
+    <div class="testimonial">“Desde que ellas gestionan nuestras redes, la interacción y ventas subieron muchísimo.” – Ember Home Deco</div>
+    <div class="testimonial">“Nos encantó cómo interpretaron nuestra esencia. ¡Creatividad total!” – Bordó Winebar</div>
+  </section>
+
+  <section class="animated">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="faq"><h3>¿Trabajan con marcas de cualquier rubro?</h3><p>Sí, nuestra experiencia abarca desde gastronomía hasta moda y decoración. Nos adaptamos a tu identidad.</p></div>
+    <div class="faq"><h3>¿Qué incluye una gestión mensual?</h3><p>Estrategia, contenido, diseño, publicaciones, interacción y reportes mensuales adaptados a tu objetivo.</p></div>
+    <div class="faq"><h3>¿Cómo se inicia el trabajo con ustedes?</h3><p>Coordinamos una videollamada inicial donde analizamos tus necesidades y armamos un plan a medida.</p></div>
+    <div class="faq"><h3>¿Puedo contratar solo publicidad o diseño?</h3><p>Absolutamente. Ofrecemos servicios por separado o integrados, según tu necesidad.</p></div>
+  </section>
+
+  <section class="animated">
+    <h2>Contacto</h2>
+    <a class="whatsapp-button" href="https://wa.me/5491131830309" target="_blank">Escribinos por WhatsApp</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Agus & Valen. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
